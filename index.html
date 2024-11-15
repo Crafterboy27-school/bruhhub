@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruh Hub 2</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Bruh Hub</h1>
+    <p>How many tabs do you want?</p>
+    <input id="tabs" placeholder="Tabs Count" type="number">
+    <button id="order">Order your tabs!</button>
+
+    <script>
+        document.getElementById("order").addEventListener("click", function(){
+            for(let i = 0;i<Math.ceil(document.getElementById("tabs").value);i++){
+                // window.open(window.location.href)
+                window.open("https://google.com")
+            }
+        })
+    </script>
+</body>
+</html>
